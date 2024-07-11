@@ -189,6 +189,7 @@ func (s *stepRunInstance) Cleanup(state multistep.StateBag) {
 		},
 		VmDeleteQuery: &model.VmDeleteQuery{
 			DataVolumeDelete: &trueValue,
+			PublicIpDelete:   &trueValue,
 		},
 	}
 	var deleteRsp *model.VmDeleteResponse
